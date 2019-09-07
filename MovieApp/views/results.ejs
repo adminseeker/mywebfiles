@@ -1,0 +1,62 @@
+<body>
+<h1>Results Page!!!</h1>
+
+<ul>
+<% data["Search"].forEach(function(search){ %>
+	<div>
+	<li>
+		<ul>
+		<li><span><strong><%= search["Title"] %></strong> - <%= search["Year"] %></li></span> <div><li><img src=<%= search["Poster"] %> ></li></div>
+		</ul></li></div>
+<% }); %>
+</ul>
+
+<a href="/"><button class="center" >Go Back</button></a>
+</body>
+
+
+
+<style rel="stylesheet">
+.center {
+
+	font-size: 30px;
+	text-align: center;
+	color: red;
+
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	text-align: center;
+	font-size: 120%;
+}
+
+span{
+	float: left;
+	color:yellow;
+}
+
+h1{
+	
+	text-align: center;
+	color:red;
+}
+
+div{
+	margin:auto;
+	display: inline-block;
+}
+
+body{
+	background-image:url("https://previews.123rf.com/images/hugolacasse/hugolacasse1705/hugolacasse170500025/79259650-blue-film-reel-movie-background-in-front-of-hollywood-city-at-night.jpg");
+	background-repeat: no-repeat;
+	margin: auto;
+	diaplay: inline-block;
+	background-size: cover;
+}
+
+</style>
+

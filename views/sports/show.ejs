@@ -1,0 +1,30 @@
+<% include ../partials/header %>
+		
+	
+		
+		<% sports.players.forEach(function(sp){ %>
+	
+		<div>
+		<h4><%= sp.college %></h4>
+		<div class="caption">
+		<h4><%= sp.sport %></h4>
+		</div>
+		
+			<h4>NAME: <%= sp.playerName %> AGE: <%=sp.age%> SKILL: <%=sp.skill%> </h4>
+				<form id="delete" action="/sports/<%=sports._id%>/<%=sp._id%>" method="POST">
+		<button>Delete This</button>
+	</form>
+		
+	
+		</div>
+	
+<% }); %>
+		
+<a href="/sports">Go Back</a>
+	
+	<form id="delete" action="/sports/<%=sports._id%>?_method=DELETE" method="POST">
+		<button>Clear All</button>
+	</form>
+	
+<% include ../partials/footer %>
+

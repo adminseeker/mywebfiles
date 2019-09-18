@@ -1,0 +1,30 @@
+<% include ../partials/header %>
+
+<div class="container">
+<div class="row">
+
+<div style="width:30%; margin: 25px auto;">
+<form action="/sports" method="POST">
+	<div class="form-group">
+	<input class="form-control" type="text" name="college" placeholder="college">
+	</div>
+	<div class="form-group">
+	<input class="form-control" type="text" name="sport" placeholder="sport">
+	</div>
+	<input class="form-control" type="text" name="playerName" placeholder="playerName">
+	<input class="form-control" type="text" name="age" placeholder="age">
+	<input class="form-control" type="text" name="skill" placeholder="skill">
+	<div class="form-group">
+
+
+	</div>
+	<div class="form-group">
+	<button class="btn btn-lg btn-primary btn-block">Submit</button>
+	</div>
+</form>
+<a href="/sports">Go Back</a>
+</div>
+
+</div>
+</div>
+<% include ../partials/footer %>
